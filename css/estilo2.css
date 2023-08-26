@@ -1,0 +1,56 @@
+html, body {
+ 	font-family:Verdana, Geneva, sans-serif;
+ 	font-weight:bold;
+ 	background-color:#082880;
+ 	}
+
+ header,section,footer,aside,article,nav
+	{
+	margin:1%;
+	}
+
+header{
+ 	background:url(gif2.gif) no-repeat ;
+	background-size:cover ;
+ 	color:#FFF;
+ 	width:98%;
+ 	}
+
+ nav{
+ 	background-color:rgb(71, 203, 212);
+ 	color:#FFF; 	
+ 	width:98%;
+ 	}
+ 
+section{
+ 	float:right;
+	background-color:#397ebe;
+	border-radius: 15px ;
+ 	width:78%;
+ 	color:#FFF;
+ 	}
+ 
+article{
+	background-color: #0CC;
+	width:98%;
+	color:#050505;
+	}
+
+aside{
+ 	background-color:#004085;
+ 	width:18%;
+  	color:#14d5db;
+ 	float:left;
+	 border-radius: 15px;
+	}
+ 
+footer{
+ 	background-color:#AA7;
+	width:98%;
+	color:#FFF;
+	clear:both;
+	}
+
+a:hover{
+background-color:#BD3;
+}

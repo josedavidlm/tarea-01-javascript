@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /*es para quitar el subrayado a las palabras*/
+    list-style: none;
+}
+
+/* Es para darle un degradado a lo que pongamos*/
+/*
+body {
+    background: linear-gradient(
+        90deg,
+        rgba(13,79,151,1.000) 25%,
+        rgb(85, 140, 190) 73%);
+        font-family: Arial, Helvetica, sans-serif;
+}*/
+/*HEADER*/
+.encabezado-pagina{
+    width: 100%;
+    background: linear-gradient(
+       90deg,
+       rgba(85, 140, 190) 25%,
+       rgb(13,79,151,1.000) 73%);
+
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.contenedor{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.back{
+    padding: 32px 0;
+}
+
+
+.menu{    
+ position: absolute; 
+ top: 25px;
+ left: 20px;
+ right: 0;
+ display: flex; /*para colocar los elementos en forma horizontal */
+ align-items: center;
+ justify-content: space-between; /*para que se coloque espacios*/
+ /*z-index: 1000;*/ /*para que este sobre cualquier elemento*/
+ margin-right: 40px;
+}
+
+.logo{
+    font-size: 24px;
+    color: #004085;
+    font-weight: 800; /*para el grosor de las letras*/
+    text-transform: uppercase; /*para que el contenido este en mayusculas*/
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+ font-size: 18px;
+ padding: 20px;
+ color: azure;
+ display: block; /*para que el padding pueda aplicarse correctame*/
+}
+
+.menu .navbar ul li a:hover{ /*para que cada vez que se pase el mause se cambie el color*/
+    color: #429bee;
+    border-bottom: solid 3px #429bee;
+}
+
+#menu{/*para borrar el icono*/
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{ /*para ocultar la imagen de menu de 3 rayas*/
+    cursor: pointer;
+    display: none;
+}
+/*para realizar efectos visuales si se habre por una app -- RESPONSIVE*/
+@media (max-width:800px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 47px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        top:100%;
+        left: 0;
+        right: 0;
+        background-color: #0D4F97;
+        z-index: 800;
+        display: none; /*para que momentariamente no se vea el menu*/
+    }
+
+    .menu .navbar ul li {
+        width: 100%; /*para que este en forma de columna*/
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+
+
+
+/*HEADER FIN*/
+
+
+
+
+
+/*PIE DE PAGINA FOOTER*/
+.pie-pagina{ /*Pondremos un color al fondo*/
+ width: 100%;
+ background: linear-gradient(
+    90deg,
+    rgba(85, 140, 190) 25%,
+    rgb(13,79,151,1.000) 73%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1100px; /*modificar*/
+    margin: auto;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr); /*la cantidad de 4 es la columnas*/
+    grid-gap: 20px; 
+    padding: 45px 0 px; /*por verse*/
+}
+
+.pie-pagina .grupo-1 .box{
+    width: 100%;
+    height: 100%;
+}
+
+.pie-pagina .grupo-1 .box h2{
+ color: white;
+ margin-bottom: 25px;
+ font-size: 18px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: azure;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.pie-pagina .grupo-1 p:hover{ /*para que cada vez que se pase el mause se cambie el color*/
+    color: #0D4F97;
+}
+
+.pie-pagina .grupo-1 .box .red-social {    
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+    z-index: 900;
+}
+
+.pie-pagina .grupo-1 .box .red-social a{
+	padding: 10px 15px;
+	/*color: #cccccc;*/
+    
+	/*border-right: 1px #888888 solid;*/
+    
+}
+
+.pie-pagina .red-social span {
+    color: #429bee;
+}
+
+.pie-pagina .grupo-1 .box .red-social img{
+    /*padding: 10px 15px;
+	color: #cccccc;*/
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    transition: all 300ms ease;
+    /*
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    transition: all 300ms ease;*/
+}
+
+.pie-pagina .grupo-1 .box .red-social a:hover{
+    /*color: #0D4F97;*/
+    color: #1C055B;
+	background-color: #337ab7;
+}
+
+.pie-pagina .grupo-2{
+background-color: #3070b4;
+padding: 15px 10px;
+text-align: center;
+color: azure;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+@media (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 85%;
+        grid-template-columns: repeat(1,1fr); /*la cantidad de 4 es la columanas*/
+        grid-gap: 30px; 
+        padding: 35px 0 px;
+    }
+
+}
+ 
+
+/*parte de servicos */
+
+.port {
+	padding: 5%;
+}
+.gallery-item {
+	position: relative;
+	box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+/* overlay */
+
+.gallery-item img {
+	width: 100%;
+}
+.gallery-item .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+.gallery-item:hover .overlay {
+	opacity: 1;
+}
+.gallery-item .overlay h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.gallery-item .overlay p {
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.gallery-item .overlay .btn {
+	font-size: 16px;
+}
+.modal {
+	background: rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 991px) {
+	.gallery-item {
+		margin-bottom: 30px;
+	}
+}
