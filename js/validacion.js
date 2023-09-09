@@ -79,7 +79,7 @@ function validacion() {
 	
 	var campoPassword = document.getElementById('Password');
 
-	var campoRememberMe = document.getElementById('RememberMe');
+	var campoRememberMe = document.getElementById('btn-switch');
 	
 
 	var mensajeblanco = "";
