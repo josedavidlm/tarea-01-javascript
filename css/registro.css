@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(3, 18, 32);
+}
+
+
+.form-register{
+ width: 400px;
+ background-color: #24303c;
+ padding: 25px;
+ margin: auto; /*para centrar el texto*/
+ margin-top: 100px;
+ margin-bottom: 100px;
+ border-radius: 25px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: white;
+ box-shadow: 7px 13px 37px #000; /*para dar sombreado al formulario de registro*/
+}
+
+.form-register h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*para los encabezados de las cajas de texto*/
+.txtEncabezado{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+    color: azure;
+    cursor: pointer;
+}
+
+/* para las cajas de texto*/
+.cajastxt, .fecha{
+    width: 100%;
+    background: #24303c;
+    padding: 10px; /*el grosor por dentro de la caja de txt*/
+    border-radius: 25px;
+    margin-bottom: 16px; /*para separarlos*/
+    border: 1px solid #1f53c5; /*para darle color al marco del borde*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 60px;
+}
+
+
+
+/*para el color de terminos y condiciones*/
+.form-register .boton-switch a{
+    color: #1f53c5;
+}
+/*para el color de ya tengo cuenta*/
+.form-register a{
+    color: #1f53c5;
+}
+
+.form-register .boton-switch p{
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    display: flex; /*por defecto flex lo ve en fila*/
+    justify-content: space-between; /* para mandar a los elementos a los lados*/
+    margin: auto;
+}
+
+/*boton de registro*/
+.form-register .boton{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 0px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .1s ease all;
+}
+
+.form-register .boton:hover { /*darle fondo al boton cuando este el mouse encima */
+	box-shadow: 3px 0px 30px #000;
+}
+
+/*boton inicio*/
+.boton-switch{
+    margin: 10px;
+}
+
+.lbl-switch{
+    display: inline-block; /*para que el boton sea independiente*/
+    width: 50px;
+    height: 25px;
+    background: #000;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lbl-switch:after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    top: 2px;
+    left: 4px;
+    transition: 0.4s;
+}
+
+#terminos{ /*para borrar el cuadro de checkbox*/
+    display: none;
+}
+
+#terminos:checked~ .lbl-switch{ /*cada vez que este activo, cambiara de color */
+    background-color: #1f53c5;
+}
+#terminos:checked~ .lbl-switch::after{ /*para que el boton se desplace a la izquierda y encianda el color*/
+    left: 25px;
+}
+/*boton fin*/
+
+/*validaciones ediciones*/
+
+
+/*SI SE ENVIA CORRECTAMENTE*/
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+    font-weight: bold;
+	color: #7dc973;
+    display: none; /*para ocultar*/
+}
+
+/*para mostrar*/
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+/*SI SE ENVIA CORRECTAMENTE*/
+
+
+/*TEXTO DEBAJO DE LOS LABELS OCULTO*/
+.formulario__input-error {
+	font-size: 12 px;
+    margin-top: -30px;
+    font-weight: bold;
+    color: rgb(235, 96, 96);
+    display: none;/*para ocultar*/
+}
+
+/*para motrar*/
+.formulario__input-error-activo {
+	display: block;
+}
+/*TEXTO DEBAJO DE LOS LABELS OCULTO*/
+
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+/*por si el formulario no se envia correctamente*/
+.formulario__mensaje{
+    grid-column: span 2;
+}
+
+/*MENSAJE DE ENVIO FORM ERROR*/
+.formulario__mensaje {
+    width: 100%;
+    padding: 2px;
+    background-color: rgb(235, 96, 96);
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+/*MENSAJE DE ENVIO FORM ERROR*/
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}

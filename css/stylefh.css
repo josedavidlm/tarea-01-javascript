@@ -20,11 +20,13 @@ body {
     width: 100%;
     background: linear-gradient(
        90deg,
-       rgba(85, 140, 190) 25%,
-       rgb(13,79,151,1.000) 73%);
+       rgba(36, 48, 60) 25%,
+       rgb(30, 55, 82) 73%);
 
     font-family: Arial, Helvetica, sans-serif;
-   
+   display: flex;
+   justify-content: center;
+
 }
 
 .contenedor{
@@ -52,7 +54,7 @@ body {
 
 .logo{
     font-size: 24px;
-    color: #004085;
+    color: rgb(66, 155, 238);
     font-weight: 800; /*para el grosor de las letras*/
     text-transform: uppercase; /*para que el contenido este en mayusculas*/
 }
@@ -77,7 +79,7 @@ body {
 #menu{/*para borrar el icono*/
     display: none;
 }
-
+/*para darle tamaño al icono*/
 .menu-icono{
     width: 25px;
 }
@@ -100,7 +102,6 @@ body {
     .menu .navbar{
         position: absolute;
         top: 100%;
-        top:100%;
         left: 0;
         right: 0;
         background-color: #0D4F97;
@@ -116,9 +117,6 @@ body {
     }
 }
 
-
-
-
 /*HEADER FIN*/
 
 
@@ -130,19 +128,18 @@ body {
  width: 100%;
  background: linear-gradient(
     90deg,
-    rgba(85, 140, 190) 25%,
-    rgb(13,79,151,1.000) 73%);
+    rgba(36, 48, 60) 25%,
+    rgb(30, 55, 82) 73%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1100px; /*modificar*/
+    width: 100%;/*modificar*/
     margin: auto;
     display: grid; 
     grid-template-columns: repeat(4,1fr); /*la cantidad de 4 es la columnas*/
-    grid-gap: 20px; 
-    padding: 45px 0 px; /*por verse*/
+    grid-gap: 20px;
+    padding: 30px 100px; /*alto y ancho */ 
 }
 
 .pie-pagina .grupo-1 .box{
@@ -190,6 +187,8 @@ body {
     color: #429bee;
 }
 
+
+
 .pie-pagina .grupo-1 .box .red-social img{
     /*padding: 10px 15px;
 	color: #cccccc;*/
@@ -211,7 +210,7 @@ body {
 }
 
 .pie-pagina .grupo-2{
-background-color: #3070b4;
+background-color: #314e6d;
 padding: 15px 10px;
 text-align: center;
 color: azure;
@@ -220,8 +219,6 @@ color: azure;
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
-
-
 
 
 @media (max-width:800px) {

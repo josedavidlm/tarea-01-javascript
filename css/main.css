@@ -15,8 +15,8 @@
     
     background: linear-gradient(
     90deg,
-    rgba(85, 140, 190) 25%,
-    rgb(13,79,151,1.000) 73%);
+    rgba(36, 48, 60) 25%,
+    rgb(30, 55, 82) 73%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,8 +26,8 @@
 
     background: linear-gradient(
     90deg,
-    rgba(85, 140, 190) 25%,
-    rgb(13,79,151,1.000) 73%);
+    rgba(36, 48, 60) 25%,
+    rgb(30, 55, 82) 73%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -56,8 +56,8 @@ header .header-icons-container {
     display: grid;
     background: linear-gradient(
         90deg,
-        rgba(85, 140, 190) 25%,
-        rgb(13,79,151,1.000) 73%);
+        rgba(36, 48, 60) 25%,
+        rgb(30, 55, 82) 73%);
 }
 header .header-icons-container .icons {    
     width: 200px;
@@ -215,11 +215,11 @@ nav .navbar a:hover{
     margin-top:auto;
 	margin-left:auto;
 	margin-right:auto;
-	padding:0 15px;    
+	padding:0 15px;        
     background: linear-gradient(
-        90deg,
-        rgb(13,79,151,1.000) 5%,
-        rgb(13,79,151,1.000) 93%);
+            90deg,
+            rgba(36, 48, 60) 25%,
+            rgb(30, 55, 82) 73%);
     color: #e6e9ed;
     border:solid 1px #429bee;
 }
@@ -392,7 +392,10 @@ aside{
 html, body {
     font-family:Verdana, Geneva, sans-serif;
     font-weight:bold;
-    background-color:#004085;
+    background: linear-gradient(
+        90deg,
+        rgba(36, 48, 60) 25%,
+        rgb(30, 55, 82) 73%);
     }
 
 section,aside,article,nav
