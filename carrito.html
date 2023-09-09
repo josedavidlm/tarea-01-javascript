@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/stylefh.css">
     <link rel="stylesheet" href="css/font/flaticon.css">
+    <link rel="stylesheet" href="css/productos.css">
+ 
+
 </head>
-<body >
+<body >   
 
     <header class="encabezado-pagina"> 
         <section class="header-icons-container">  
             <div class="icons">
                 <div>  
-                    <a href="#"><span class="fa fa-pencil-square-o"></span></a>  
+                    <a href="registro.html"><span class="fa fa-pencil-square-o"></span></a>  
                     <h6>Registrate</h6>
                 </div>              
                 <div >
@@ -28,25 +31,25 @@
                     <h6 >Ingresar</h6>
                 </div>
                 <div>   
-                    <a href="#"><span class="fa fa-cart-arrow-down"></span></a> 
+                    <a href="carrito.html"><span class="fa fa-cart-arrow-down"></span></a> 
                     <h6>Carrito</h6>
                 </div>                     
             </div>
         </section>        
         <section class="back">
             <div class="menu contenedor">                
-               <a href="#" class="logo">COMPU SERVICE PERÚ</a>       
-                <!--Empezamos con la edición-->
-                <input type="checkbox" id="menu"/>
-                <label for="menu">
-                    <img src="img/menu1.png" class="menu-icono" alt="">
-                </label>
+               <a href="#" class="logo">COMPU SERVICE PERÚ</a>                                  
+               <input type="checkbox" id="menu"/>
+               <label for="menu">
+                   <img src="img/menu1.png" class="menu-icono" alt="">
+               </label>
                 <!--Empezamos con la edición-->
                 <nav class="navbar">
                     <ul>
                         <li><a href="index.html"><span class="fa fa-home text-info"></span> Inicio</a></li>  
                         <li><a href="AcercaDeNosotros.html"><span class="fa fa-users text-warning"></span> Nosotros</a></li>
                         <li><a href="servicios.html"><span class="fa fa-gear text-success"></span> Servicios</a></li>
+                        <li><a href="productos.html"><span class="fa fa-circle text-primary"></span> Productos</a></li>
                         <li><a href="contactenos.html"><span class="fa fa-envelope text-warning"></span> Contáctenos</a></li>
                         <li><a href="ubicacion.html"><span class="fa fa-map-marker text-info bg-dark"></span> Ubícanos</a></li>
                     </ul>
@@ -54,17 +57,40 @@
                 
             </div>
         </section>
-
+        
     </header>
-    <main class="home-main" >
-        <section>
-            <p class="home-main-text">Carrito de compras</p>      
+
+    <!--FIN DE HEADER-->
+
+    <main >        		
+        
+        <section class="carrito">    
+            <h2>Mi carrito</h2>
+            
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Imagen</th>
+                        <th>Cantidad</th>
+                        <th>precio</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="Producto-list">
+    
+                </tbody>
+            </table>
+
         </section>
-        <div class="whatsapp-boton">
+
+
+	    <div class="whatsapp-boton">
             <a href="https://wa.me/941349964?text=Este%20es%20el%20exámen%20final%20CERTUS" target="_blank">
                 <img class="whatsappboton" src="img/icono.png" alt="">
             </a>
-        </div>   
+        </div>
     </main>
     <!--INICIO DE FOOTER-->
     <footer class="pie-pagina"> <!--Encapsulamos todo lo que se pondra en el footer-->
@@ -94,14 +120,16 @@
                 </div>
             </div>  
     
+    
+    
+    
         </div>
         <div class="grupo-2">
             <small>&copy; 2023 <b>COMPUSERVICEPERÚ</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
     <!--FIN DE FOOTER-->
-
-    <!-- Optional JavaScript -->
+        <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -112,6 +140,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+    
+    <script src="js/listarCarrito.js"></script>
+    
 </body>
+
 </html>
